@@ -1,7 +1,6 @@
 # Fire-Analysis
 
 The exact scope and the narrative will be determined on Monday based on the data we will be able to find for free.
-___
 
 ## Project Collaborators:
 
@@ -17,7 +16,7 @@ ___
 
 ### Key Findings and Charts
 
-##### *Please find more details in the separate presentation included in this repo*
+#### *Please find more details in the separate presentation included in this repo*
 
 ___
 
@@ -36,5 +35,5 @@ ___
 * **[Charts]()** folder contains various visualization displays
 * **Files with codes** have **self-explanatory names** and are available in the [main body of the repo]()
 * **[Presentation]()** with more information about the projects and all necessary charts.
-#### *[Link to the interactive visualization]()*
+* #### *[Link to the interactive visualization]()*
 
