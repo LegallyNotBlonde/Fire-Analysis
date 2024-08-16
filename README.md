@@ -32,8 +32,8 @@ ___
 ### Repo Structure
 * **[Resources folder](https://github.com/LegallyNotBlonde/Fire-Analysis/tree/main/Resources)** contains original, raw data sets
 * **[Outputs](https://github.com/LegallyNotBlonde/Fire-Analysis/tree/main/Outputs)** includes transformed data and tables
-* **[Charts]()** folder contains various visualization displays
-* **Files with codes** have **self-explanatory names** and are available in the [main body of the repo]()
-* **[Presentation]()** with more information about the projects and all necessary charts.
-* #### *[Link to the interactive visualization]()*
+* **[Charts](https://github.com/LegallyNotBlonde/Fire-Analysis/tree/main/Charts)** folder contains various visualization displays
+* **Files with codes** have **self-explanatory names** and are available in the [main body of the repo](https://github.com/LegallyNotBlonde/Fire-Analysis)
+* **[Presentation LINK TO BE ADDED]()** with more information about the projects and all necessary charts.
+* #### *[Link to the interactive visualization LINK TO BE ADDED]()*
 
