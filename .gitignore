@@ -20,3 +20,7 @@ rad.json
 *.flf
 #Test results file
 TestResults.xml
+#Local Working copy of DateExploreTF.ipynb
+DateExploreT copy.ipynb
+#Testing directory of Consistently formatted Excel files
+Resources/UniformXLSXs
