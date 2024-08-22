@@ -1,57 +1,57 @@
 County,Acres,Strux_Destr,Strux_Dmgd,Deaths_FF,Deaths_Civil,Duration
-Alameda,3330,2,0,0,0,9.0
-Alpine,655,0,0,0,0,33.0
-Amador,71693,966,1,0,2,49.0
-Butte,184162,247,768,0,85,258.0
-Calaveras,1101,3,1,0,0,29.0
-Colusa,2220,4,0,0,0,374.0
-Contra Costa,340,0,0,0,0,5.0
-Del Norte,59247,0,0,0,0,208.0
-El Dorado,4177,0,0,0,0,64.0
-Fresno,186058,19,1,0,0,238.0
-Glenn,2290,1,0,0,0,14.0
-Humboldt,44831,12,0,0,0,90.0
-Inyo,23845,43,5,0,0,126.0
-Jackson (OR),39716,0,0,0,0,109.0
-Kern,95629,292,12,0,2,126.0
-Kings,48660,1,0,0,0,17.0
-Lake,192837,607,143,0,4,129.0
-Lassen,130350,20,7,0,0,104.0
-Los Angeles,99905,341,283,0,3,201.0
-Madera,37731,21,5,1,0,139.0
-Marin,1660,3,1,0,0,4.0
-Mariposa,201367,146,21,2,0,458.0
-Mendocino,39098,554,41,0,9,38.0
-Merced,13040,0,0,0,0,18.0
-Modoc,162353,3,0,1,0,180.0
-Mono,28393,5,0,0,0,174.0
-Monterey,158753,89,7,1,0,167.0
-Napa,107781,786,442,1,27,94.0
-Nevada,4340,64,6,0,0,63.0
-Orange,34904,49,80,0,0,58.0
-Placer,8408,0,0,0,0,68.0
-Plumas,60376,9,0,0,0,101.0
-Riverside,37950,97,80,0,2,109.0
-Sacramento,1997,0,0,0,0,10.0
-San Benito,2517,0,0,0,0,23.0
-San Bernardino,84986,349,13,0,0,98.0
-San Diego,29542,221,81,0,2,84.0
-San Joaquin,11789,1,0,0,0,14.0
-San Luis Obispo,94487,114,13,0,0,93.0
-Santa Barbara,75242,50,8,1,0,166.0
-Santa Clara,4794,28,1,0,0,47.0
-Santa Cruz,391,6,0,0,0,14.0
-Shasta,343102,57,291,3,4,166.0
-Siskiyou,250390,109,13,0,1,441.0
-Solano,6662,3,1,0,0,7.0
-Sonoma,144935,380,234,0,3,96.0
-Stanislaus,3001,0,0,0,0,4.0
-Sutter,2300,7,0,0,0,5.0
-Tehama,29185,14,7,0,0,-3524.0
-Trinity,225119,155,0,0,0,430.0
-Tulare,107420,2,0,0,0,628.0
-Tuolumne,46506,136,0,0,0,425.0
-Ventura,117296,9,367,0,3,63.0
-Washoe (NV),19207,0,0,0,0,22.0
-Yolo,98253,31,4,0,0,39.0
-Yuba,11328,264,10,0,4,15.0
+Alameda,3330,2,0,0,0,2 days7 days
+Alpine,655,0,0,0,0,33 days
+Amador,71693,966,1,0,2,45 days4 days
+Butte,184162,247,768,0,85,12 days11 days2 days61 days18 days7 days9 days29 days28 days14 days2 days43 days3 days19 days
+Calaveras,1101,3,1,0,0,8 days14 days7 days
+Colusa,2220,4,0,0,0,374 days
+Contra Costa,340,0,0,0,0,5 days
+Del Norte,59247,0,0,0,0,77 days61 days70 days
+El Dorado,4177,0,0,0,0,40 days2 days22 days
+Fresno,186058,19,1,0,0,9 days4 days12 days2 days47 days11 days124 days4 days5 days14 days4 days1 days1 days
+Glenn,2290,1,0,0,0,14 days
+Humboldt,44831,12,0,0,0,23 days15 days33 days19 days
+Inyo,23845,43,5,0,0,6 days8 days9 days8 days79 days16 days
+Jackson (OR),39716,0,0,0,0,109 days
+Kern,95629,292,12,0,2,11 days2 days40 days10 days17 days2 days1 days1 days5 days2 days6 days4 days3 days3 days6 days1 days5 days3 days4 days
+Kings,48660,1,0,0,0,17 days
+Lake,192837,607,143,0,4,34 days22 days16 days5 days17 days18 days17 days
+Lassen,130350,20,7,0,0,4 days4 days15 days32 days4 days15 days8 days3 days4 days11 days4 days
+Los Angeles,99905,341,283,0,3,4 days9 days7 days8 days4 days3 days17 days8 days18 days7 days11 days16 days7 days16 days16 days8 days12 days25 days5 days
+Madera,37731,21,5,1,0,4 days18 days22 days2 days11 days34 days11 days7 days4 days9 days8 days7 days2 days
+Marin,1660,3,1,0,0,4 days
+Mariposa,201367,146,21,2,0,1 days15 days92 days128 days41 days10 days9 days47 days5 days110 days
+Mendocino,39098,554,41,0,9,7 days3 days9 days19 days
+Merced,13040,0,0,0,0,2 days5 days2 days1 days2 days5 days1 days
+Modoc,162353,3,0,1,0,19 days5 days21 days18 days12 days45 days8 days13 days1 days4 days5 days13 days8 days8 days
+Mono,28393,5,0,0,0,4 days6 days68 days6 days4 days14 days5 days29 days18 days9 days11 days
+Monterey,158753,89,7,1,0,14 days4 days4 days2 days1 days11 days3 days2 days2 days4 days8 days10 days16 days84 days1 days1 days
+Napa,107781,786,442,1,27,24 days20 days16 days2 days24 days8 days
+Nevada,4340,64,6,0,0,19 days15 days14 days8 days7 days
+Orange,34904,49,80,0,0,9 days40 days9 days
+Placer,8408,0,0,0,0,14 days3 days2 days1 days48 days
+Plumas,60376,9,0,0,0,22 days19 days3 days57 days
+Riverside,37950,97,80,0,2,4 days1 days4 days2 days7 days6 days6 days3 days11 days4 days5 days5 days7 days7 days1 days6 days3 days16 days3 days8 days
+Sacramento,1997,0,0,0,0,3 days4 days3 days
+San Benito,2517,0,0,0,0,9 days9 days5 days
+San Bernardino,84986,349,13,0,0,10 days24 days12 days19 days5 days5 days5 days9 days2 days7 days
+San Diego,29542,221,81,0,2,5 days5 days3 days5 days13 days7 days7 days2 days2 days5 days4 days2 days4 days3 days4 days3 days10 days
+San Joaquin,11789,1,0,0,0,14 days
+San Luis Obispo,94487,114,13,0,0,2 days1 days1 days3 days11 days1 days3 days19 days2 days3 days3 days2 days26 days13 days3 days
+Santa Barbara,75242,50,8,1,0,6 days8 days19 days90 days9 days5 days29 days
+Santa Clara,4794,28,1,0,0,44 days3 days
+Santa Cruz,391,6,0,0,0,14 days
+Shasta,343102,57,291,3,4,23 days35 days15 days10 days37 days3 days2 days41 days
+Siskiyou,250390,109,13,0,1,69 days80 days10 days57 days118 days3 days17 days27 days18 days21 days21 days
+Solano,6662,3,1,0,0,2 days5 days
+Sonoma,144935,380,234,0,3,23 days7 days24 days19 days23 days
+Stanislaus,3001,0,0,0,0,3 days1 days
+Sutter,2300,7,0,0,0,3 days2 days
+Tehama,29185,14,7,0,0,2 days13 days4 days84 days4 days1 days12 days7 days1 days1 days
+Trinity,225119,155,0,0,0,55 days17 days37 days31 days36 days14 days62 days32 days17 days78 days51 days
+Tulare,107420,2,0,0,0,27 days7 days1 days65 days5 days2 days2 days49 days5 days44 days33 days22 days71 days43 days4 days23 days80 days27 days79 days13 days1 days25 days
+Tuolumne,46506,136,0,0,0,3 days112 days7 days123 days79 days9 days92 days
+Ventura,117296,9,367,0,3,9 days7 days4 days10 days15 days18 days
+Washoe (NV),19207,0,0,0,0,20 days2 days
+Yolo,98253,31,4,0,0,15 days11 days4 days9 days
+Yuba,11328,264,10,0,4,1 days2 days12 days
