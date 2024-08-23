@@ -55,7 +55,7 @@
                 totalStatsDiv.html(`
                     <p><strong>Total Fires:</strong> ${filteredData.total_fires}</p>
                     <p><strong>Total Acres:</strong> ${filteredData.total_acres}</p>
-                    <p><strong>Average Duration:</strong> ${filteredData.avg_duration}</p>
+                    <p><strong>Average Duration:</strong> ${filteredData.average_yearly_duration}</p>
                     <p><strong>Total Deaths:</strong> ${filteredData.total_deaths}</p>
                 `);
 
@@ -68,10 +68,10 @@
                         x: monthlyFilteredData.map(d => d.Month),
                         y: monthlyFilteredData.map(d => d.total_fires),
                         type: 'bar',
-                        name: 'Total Fires'
+                        name: 'Total Fires By Month'
                     };
                     const layoutFires = {
-                        title: `Total Fires by Month in ${selectedYear}`,
+                        title: `Total Fires Each Month in ${selectedYear}`,
                         xaxis: { title: 'Month' },
                         yaxis: { title: 'Total Fires' }
                     };
@@ -82,7 +82,7 @@
                         x: monthlyFilteredData.map(d => d.Month),
                         y: monthlyFilteredData.map(d => d.total_acres),
                         type: 'bar',
-                        name: 'Total Acres'
+                        name: 'Total Acres Burned By Month'
                     };
                     const layoutAcres = {
                         title: `Total Acres by Month in ${selectedYear}`,
@@ -94,14 +94,14 @@
                     // Update Average Duration chart by Month
                     const traceDuration = {
                         x: monthlyFilteredData.map(d => d.Month),
-                        y: monthlyFilteredData.map(d => d.avg_duration),
+                        y: monthlyFilteredData.map(d => d.avg_monthly_duration),
                         type: 'bar',
-                        name: 'Average Duration'
+                        name: 'Average Fire Duration By Month'
                     };
                     const layoutDuration = {
-                        title: `Average Duration by Month in ${selectedYear}`,
+                        title: `Average Fire Duration in ${selectedYear}`,
                         xaxis: { title: 'Month' },
-                        yaxis: { title: 'Average Duration' }
+                        yaxis: { title: 'Average Fire Duration' }
                     };
                     Plotly.newPlot('chart-duration', [traceDuration], layoutDuration);
 
@@ -110,7 +110,7 @@
                         x: monthlyFilteredData.map(d => d.Month),
                         y: monthlyFilteredData.map(d => d.total_deaths),
                         type: 'bar',
-                        name: 'Total Deaths'
+                        name: 'Total Deaths by Month'
                     };
                     const layoutDeaths = {
                         title: `Total Deaths by Month in ${selectedYear}`,

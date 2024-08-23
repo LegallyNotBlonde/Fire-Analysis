@@ -29,7 +29,7 @@
             totalStatsDiv.html(`
                 <p><strong>Total Fires:</strong> ${filteredData.total_fires}</p>
                 <p><strong>Total Acres:</strong> ${filteredData.total_acres}</p>
-                <p><strong>Average Duration:</strong> ${filteredData.avg_duration}</p>
+                <p><strong>Average Duration:</strong> ${filteredData.average_yearly_duration}</p>
                 <p><strong>Total Deaths:</strong> ${filteredData.total_deaths}</p>
             `);
 
@@ -69,7 +69,7 @@
                 // Update Average Duration chart by Month
                 const traceDuration = {
                     x: monthlyFilteredData.map(d => d.Month),
-                    y: monthlyFilteredData.map(d => d.avg_duration),
+                    y: monthlyFilteredData.map(d => d.avg_monthly_duration),
                     type: 'bar',
                     name: 'Average Duration'
                 };
