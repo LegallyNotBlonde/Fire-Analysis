@@ -6,19 +6,27 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 18,
 }).addTo(map);
 
-// Load CSV data
+// Load CSV data and calculate total deaths
 Papa.parse('summary_totals_by_county.csv', {
     download: true,
     header: true,
     complete: function(results) {
         var csvData = results.data;
-        console.log("CSV Data:", csvData); // Debugging log
+        console.log("CSV Data Loaded:", csvData); // Debugging log
+
+        // Calculate total deaths for each entry in the CSV data
+        csvData.forEach(function(entry) {
+            let deathsFF = parseFloat(entry.Deaths_FF) || 0;
+            let deathsCivil = parseFloat(entry.Deaths_Civil) || 0;
+            entry.total_deaths = deathsFF + deathsCivil;
+            console.log(`Total deaths for ${entry.County}: ${entry.total_deaths}`); // Debugging log
+        });
 
         // Fetch GeoJSON data for California counties
         fetch('California_County_Boundaries.geojson')
             .then(response => response.json())
             .then(geojsonData => {
-                console.log("GeoJSON Data:", geojsonData); // Debugging log
+                console.log("GeoJSON Data Loaded:", geojsonData); // Debugging log
                 processGeoJSON(geojsonData, csvData);
             });
     }
@@ -32,18 +40,20 @@ function processGeoJSON(geojsonData, csvData) {
 
         // Ensure that entry.County exists and is not undefined
         var csvEntry = csvData.find(entry => entry.County && countyName && entry.County.trim() === countyName.trim());
+
         if (csvEntry) {
-            console.log("Matching CSV Entry for", countyName, ":", csvEntry); // Debugging log
+            // If there's a matching CSV entry, set the properties based on CSV data
             feature.properties.acres = parseFloat(csvEntry.Acres) || 0; // Acres
             feature.properties.strut_dest = parseFloat(csvEntry.Strux_Destr) || 0; // Structures Destroyed
             feature.properties.strux_dmgd = parseFloat(csvEntry.Strux_Dmgd) || 0; // Structures Damaged
-            // Calculate Total Deaths dynamically
-            let deathsFF = parseFloat(csvEntry.Deaths_FF) || 0;
-            let deathsCivil = parseFloat(csvEntry.Deaths_Civil) || 0;
-            feature.properties.total_deaths = deathsFF + deathsCivil;
-            console.log(`Total deaths for ${countyName}: ${feature.properties.total_deaths}`); // Debugging log
+            feature.properties.total_deaths = csvEntry.total_deaths; // Total deaths calculated earlier
         } else {
-            console.warn("No matching CSV entry for", countyName); // Debugging log
+            // If there's no matching CSV entry, set all properties to zero
+            console.warn(`No data for ${countyName}, setting all values to 0.`);
+            feature.properties.acres = 0;
+            feature.properties.strut_dest = 0;
+            feature.properties.strux_dmgd = 0;
+            feature.properties.total_deaths = 0;
         }
     });
 
