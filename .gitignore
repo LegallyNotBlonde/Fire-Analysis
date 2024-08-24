@@ -24,5 +24,10 @@ TestResults.xml
 DateExploreT copy.ipynb
 #Testing directory of Consistently formatted Excel files
 Resources/UniformXLSXs
+<<<<<<< HEAD
 
 Corrected_Duration_Long_Fires.csv
+=======
+# Adding an intermediate file to ignore that is not needed in the local repo
+Corrected_Duration_Long_Fires.csv
+>>>>>>> 0e962dbf0328d1c1c896d7b94e5b935cd77c3fa9

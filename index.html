@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+    <!--Set header details with references-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fire Statistics Dashboard</title>
+    <link rel="stylesheet" href="style_yearly.css">
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-</head>
+</head> <!--Close header details-->
+
+<!--Set body details with references-->
 <body>
-    <h1>Fire Statistics Dashboard</h1>
-    <p>Use the interactive charts below to explore the dataset</p>
+    <h1>Annual Fire Statistics Dashboard</h1> <!--Close header on the body details-->
+    <!--Display the text in the line below-->
+    <p>Use the dropdown menu below to select the year</p>
 
     <label for="year-select">Select Year:</label>
     <select id="year-select"></select>
@@ -22,10 +27,11 @@
     <div id="chart-acres"></div>
     <div id="chart-duration"></div>
     <div id="chart-deaths"></div>
+    <div id="chart-findamage"></div>
 
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <script>
-        // Load the CSV file with D3.js for yearly statistics
+        // Load the CSV file with D3.js for yearly statistics from Output folder
         d3.csv('Outputs/yearly_stats.csv').then(function(data) {
             // Populate dropdown with unique years
             const yearSelect = d3.select("#year-select");
@@ -47,19 +53,19 @@
                 // Filter data by the selected year
                 const filteredData = data.filter(d => d.Year == selectedYear)[0];
 
-                // Console log the filtered data to verify
+                // Console log the filtered data to verify results
                 console.log("Filtered Data:", filteredData);
 
-                // Update total stats for the selected year
+                // Update key stats for the selected year
                 const totalStatsDiv = d3.select("#total-stats");
                 totalStatsDiv.html(`
-                    <p><strong>Total Fires:</strong> ${filteredData.total_fires}</p>
-                    <p><strong>Total Acres:</strong> ${filteredData.total_acres}</p>
-                    <p><strong>Average Duration:</strong> ${filteredData.average_yearly_duration}</p>
-                    <p><strong>Total Deaths:</strong> ${filteredData.total_deaths}</p>
+                <p><strong>Total Acres:</strong> ${parseFloat(filteredData.total_acres).toLocaleString('en-US', { minimumFractionDigits: 0, maximumFractionDigits: 0 })}</p>
+                <p><strong>Average Duration:</strong> ${filteredData.average_yearly_duration}</p>
+                <p><strong>Total Deaths:</strong> ${filteredData.total_deaths}</p>
+                <p><strong>Total Financial Damage, $:</strong> ${parseFloat(filteredData.Tot_Damage).toLocaleString('en-US', { minimumFractionDigits: 0, maximumFractionDigits: 0 })}</p>
                 `);
 
-                // Load the CSV file for monthly statistics
+                // Load the CSV file for monthly statistics from Outputs folder
                 d3.csv('Outputs/monthly_stats.csv').then(function(monthlyData) {
                     const monthlyFilteredData = monthlyData.filter(d => d.Year == selectedYear);
 
@@ -68,7 +74,8 @@
                         x: monthlyFilteredData.map(d => d.Month),
                         y: monthlyFilteredData.map(d => d.total_fires),
                         type: 'bar',
-                        name: 'Total Fires By Month'
+                        name: 'Total Fires By Month',
+                        marker: { color: 'brown' }  // Set bar color 
                     };
                     const layoutFires = {
                         title: `Total Fires Each Month in ${selectedYear}`,
@@ -82,21 +89,23 @@
                         x: monthlyFilteredData.map(d => d.Month),
                         y: monthlyFilteredData.map(d => d.total_acres),
                         type: 'bar',
-                        name: 'Total Acres Burned By Month'
+                        name: 'Total Acres Burned By Month',
+                        marker: { color: 'black' }  // Set bar color 
                     };
                     const layoutAcres = {
-                        title: `Total Acres by Month in ${selectedYear}`,
+                        title: `Total Acres Burned by Month in ${selectedYear}`,
                         xaxis: { title: 'Month' },
                         yaxis: { title: 'Total Acres' }
                     };
                     Plotly.newPlot('chart-acres', [traceAcres], layoutAcres);
 
-                    // Update Average Duration chart by Month
+                    // Update Average Fire Duration chart by Month
                     const traceDuration = {
                         x: monthlyFilteredData.map(d => d.Month),
                         y: monthlyFilteredData.map(d => d.avg_monthly_duration),
                         type: 'bar',
-                        name: 'Average Fire Duration By Month'
+                        name: 'Average Fire Duration By Month',
+                        marker: { color: 'orange' }  // Set bar color 
                     };
                     const layoutDuration = {
                         title: `Average Fire Duration in ${selectedYear}`,
@@ -110,7 +119,8 @@
                         x: monthlyFilteredData.map(d => d.Month),
                         y: monthlyFilteredData.map(d => d.total_deaths),
                         type: 'bar',
-                        name: 'Total Deaths by Month'
+                        name: 'Total Deaths by Month',
+                        marker: { color: 'red' }  // Set bar color 
                     };
                     const layoutDeaths = {
                         title: `Total Deaths by Month in ${selectedYear}`,
@@ -123,7 +133,7 @@
                 });
             }
         }).catch(function(error) {
-            console.error("Error loading yearly data:", error);  // Error handling
+            console.error("Error loading yearly data:", error);  // Set parameters how to handle errors
         });
     </script>
 </body>

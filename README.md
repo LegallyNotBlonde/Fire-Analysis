@@ -30,7 +30,8 @@ ___
 ___
 
 ### Conclusion
-
+The number of fires fluctuate year by year and there is no consistent growth.
+However, on average fire burn during 13 days a month with astronomical financial losses.
 
 ### Additional Interesting Findings
 While reviewing yearly statistics, we noticed that fires in 2020 alone cost California over $4 million.  
