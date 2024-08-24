@@ -24,7 +24,8 @@
             // Console log the filtered data to verify
             console.log("Filtered Data:", filteredData);
 
-            // Update total stats for the selected year
+            // Update total stats for the selected year with the data points to display
+            // parseFloat was used to include commas to more digestible display of numbers
             const totalStatsDiv = d3.select("#total-stats");
             totalStatsDiv.html(`
                 <p><strong>Total Fires:</strong> ${filteredData.total_fires}</p>
@@ -32,10 +33,9 @@
                 <p><strong>Average Duration:</strong> ${filteredData.average_yearly_duration}</p>
                 <p><strong>Total Deaths:</strong> ${filteredData.total_deaths}</p>
                 <p><strong>Total Financial Damage, $:</strong> ${parseFloat(filteredData.Tot_Damage).toLocaleString('en-US', { minimumFractionDigits: 0, maximumFractionDigits: 0 })}</p>
-        
             `);
 
-            // Load the monthly statistics CSV file with D3.js
+            // Load the monthly statistics from CSV file with D3.js
             d3.csv('Outputs/monthly_stats.csv').then(function(monthlyData) {
                 // Filter monthly data by the selected year
                 const monthlyFilteredData = monthlyData.filter(d => d.Year == selectedYear);
@@ -103,3 +103,5 @@
         console.error("Error loading yearly data:", error);  // Error handling
     });
 </script>
+
+// The information about financial damages by month was not found, so only yearly stats were included in the display.
