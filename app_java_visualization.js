@@ -28,9 +28,11 @@
             const totalStatsDiv = d3.select("#total-stats");
             totalStatsDiv.html(`
                 <p><strong>Total Fires:</strong> ${filteredData.total_fires}</p>
-                <p><strong>Total Acres:</strong> ${filteredData.total_acres}</p>
+                <p><strong>Total Acres:</strong> ${parseFloat(filteredData.total_acres).toLocaleString('en-US', { minimumFractionDigits: 0, maximumFractionDigits: 0 })}</p>
                 <p><strong>Average Duration:</strong> ${filteredData.average_yearly_duration}</p>
                 <p><strong>Total Deaths:</strong> ${filteredData.total_deaths}</p>
+                <p><strong>Total Financial Damage, $:</strong> ${parseFloat(filteredData.Tot_Damage).toLocaleString('en-US', { minimumFractionDigits: 0, maximumFractionDigits: 0 })}</p>
+        
             `);
 
             // Load the monthly statistics CSV file with D3.js
