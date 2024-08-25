@@ -24,3 +24,5 @@ TestResults.xml
 DateExploreT copy.ipynb
 #Testing directory of Consistently formatted Excel files
 Resources/UniformXLSXs
+#"Sandbox" version of USD impact to handle years scraped inconsistently due to pdf formatting difference
+USD_impact_data_ETL2.ipynb
