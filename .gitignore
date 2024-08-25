@@ -31,3 +31,8 @@ Corrected_Duration_Long_Fires.csv
 # Adding an intermediate file to ignore that is not needed in the local repo
 Corrected_Duration_Long_Fires.csv
 >>>>>>> 0e962dbf0328d1c1c896d7b94e5b935cd77c3fa9
+#env file with mapbox token
+.env
+#files that are too big for repo
+Filtered_California_Fire_Perimeters_2008_2022.geojson
+gdf_perim_with_counties_updated.geojson
