@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map with Title and Controls</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+    <script>
+        mapboxgl.accessToken = "{{ mapbox_token }}";
+    </script>
+</head>
+<body>
+    <div id="container">
+        <!-- Title above the map -->
+        <div id="title">California Fire Analysis</div>
+
+        <!-- Map container -->
+        <div id='map'></div>
+
+        <!-- Controls for year and metrics -->
+        <div id="controls">
+            <label for="year">Select Year:</label>
+            <select id="year">
+                <!-- Year options will be populated dynamically -->
+            </select>
+        
+            <input type="checkbox" id="toggle-fire-perimeters" checked>
+            <label for="toggle-fire-perimeters">Show Fire Perimeters</label>
+        </div>
+
+        <div id="metric-controls">
+            <label for="metric">Select Metric:</label>
+            <select id="metric">
+                <option value="Acres">Acres</option>
+                <option value="Deaths_FF">Deaths FF</option>
+                <option value="Deaths_Civil">Deaths Civil</option>
+                <option value="Duration">Fire Duration</option>
+                <option value="Strux_Destr">Structures Destroyed</option>
+                <option value="Strux_Dmgd">Structures Damaged</option>
+                <option value="Tot_Damage">Total Damage</option>
+            </select>
+        </div>
+    </div>
+
+    <script src="/static/map.js"></script> <!-- Link to your external JS file -->
+</body>
+</html>

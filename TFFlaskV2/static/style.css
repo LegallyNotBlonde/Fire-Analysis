@@ -1,0 +1,45 @@
+/* styles.css */
+
+/* General page styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#title {
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #f4f4f4;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Container for the map and controls */
+#container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Map styles */
+#map {
+    flex: 1;
+    position: relative;
+    height: 100%;  /* Ensures the map container has height */
+}
+
+/* Controls for dropdowns and other elements */
+#controls, #metric-controls {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+#metric-controls {
+    top: 80px; /* Positioning below the first set of controls */
+}
