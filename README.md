@@ -1,4 +1,4 @@
-# Fire-Analysis: The Growing Threat of Wildfires
+# Fire-Analysis: The Growing Threat of Wildfires and Their Costs
 
 ## Project Collaborators:
 
@@ -15,14 +15,16 @@ ___
 <p> This approach has lead to multiple code files in this repository.
 
 ### Purpose
-* This study is for educational purposes only. 
+
+* This project is for educational purposes only. 
 * We analyzed the frequency of these fires, the damage they cause, and whether some counties experience more fires than others, highlighting regions at higher risk.
 * Additionally, we explored whether the number and impact of fires have consistently increased over the years or if they have fluctuated.
 * This project, while independent and exploratory, offers valuable insights:
-    1. **County-Level Risk Assessment:** Access localized fire statistics and risk assessments here.
-    2. **Economic Impact:** In 2017, California's fires cost over $12 billion. From 2008-2022, total damages exceeded $24 billion, excluding human and environmental costs, and costs of containing fires.
-    3. **Policy Implications:** Preventative measures, though costly, could be more cost-effective than the devastating damages from wildfires.
-    4. **Real Estate Considerations:** When buying property in California, consider fire risks alongside other factors like earthquakes, as they significantly impact insurance costs.
+    1.  **County-Level Risk Assessment:** Access localized fire statistics and risk assessments here. You can check information about your county [HERE](LINK TO BE ADDED).
+    2.  **Economic Impact:** In **2017**, California's fires cost over **$12 billion**. From **2008-2022, total damages exceeded $24 billion**, excluding human and environmental costs, and costs of containing fires.
+    *Yearly Statistics can be found [HERE](https://example.com/yearly-statistics).*
+    3.  **Policy Implications:** Preventative measures, though costly, could be more cost-effective than the devastating damages from wildfires.
+    4.  **Real Estate Considerations:** When buying property in California, consider fire risks alongside other factors like earthquakes, as they significantly impact insurance costs.
 ___
 
 ### Key Findings and Charts
@@ -65,4 +67,5 @@ ___
 ___
 
 ### Resourses
+LINKS TO BE ADDED
 
