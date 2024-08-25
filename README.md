@@ -15,10 +15,14 @@ ___
 <p> This approach has lead to multiple code files in this repository.
 
 ### Purpose
-* This study is for educational purposes only. We are aware that fires are common in California.
+* This study is for educational purposes only. 
 * We analyzed the frequency of these fires, the damage they cause, and whether some counties experience more fires than others, highlighting regions at higher risk.
 * Additionally, we explored whether the number and impact of fires have consistently increased over the years or if they have fluctuated.
-
+* This project, while independent and exploratory, offers valuable insights:
+    1. **County-Level Risk Assessment:** Access localized fire statistics and risk assessments here.
+    2. **Economic Impact:** In 2017, California's fires cost over $12 billion. From 2008-2022, total damages exceeded $24 billion, excluding human and environmental costs, and costs of containing fires.
+    3. **Policy Implications:** Preventative measures, though costly, could be more cost-effective than the devastating damages from wildfires.
+    4. **Real Estate Considerations:** When buying property in California, consider fire risks alongside other factors like earthquakes, as they significantly impact insurance costs.
 ___
 
 ### Key Findings and Charts
@@ -27,6 +31,10 @@ ___
 
 #### *Please find more details in the separate presentation included in this repo.*
 
+___
+
+### Ethical Consideration 
+In our fire analysis project, we are fully aware of the **importance of protecting personally identifiable information (PII)**. However, the resource files we used contained only general statistics, so PII was not an issue in this case. Despite this, we remained vigilant in upholding other ethical considerations throughout our process. We worked hard to ensure that our data and insights were presented accurately, avoiding any bias or misleading conclusions, especially in sensitive areas like financial losses and human fatalities. We were also mindful of **potential algorithmic biases** that could affect the fairness and accuracy of our findings, **particularly with automated processes**. By being transparent about our data sources and the limitations of our analysis, we aimed to maintain trust and uphold the integrity of our work.
 ___
 
 ### Conclusion
