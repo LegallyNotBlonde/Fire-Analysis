@@ -7,7 +7,6 @@ Lassen,2893654.0,2008
 Modoc,265118.0,2008
 Plumas,550.0,2008
 Mendocino,621450.0,2008
-<<<<<<< HEAD
 Nevada,298250.0,2008
 Placer,2190700.0,2008
 Yuba,227800.0,2008
@@ -29,10 +28,6 @@ Kings,5000.0,2008
 Madera,274050.0,2008
 Mariposa,1447924.0,2008
 Merced,82000.0,2008
-=======
-Santa Clara,203201.0,2008
-Siskiyou,16200.0,2008
->>>>>>> main
 Riverside,97695477.0,2008
 Monterey,61840.0,2008
 San Benito,23100.0,2008
@@ -41,7 +36,6 @@ San Bernardino,69601.0,2008
 San Diego,71302.0,2008
 San Luis Obispo,392260.0,2008
 Tulare,93916.0,2008
-<<<<<<< HEAD
 Calaveras,269397.0,2008
 Tuolumne,434309.0,2008
 Santa Clara,203201.0,2008
@@ -49,9 +43,6 @@ Amador,279550.0,2009
 El Dorado,23351.0,2009
 Sacramento,5750.0,2009
 San Joaquin,0.0,2009
-=======
-Santa Clara,202701.0,2008
->>>>>>> main
 Butte,6454.0,2009
 Plumas,0.0,2009
 Tehama,0.0,2009
@@ -62,7 +53,6 @@ Lassen,3226338.0,2009
 Modoc,1250.0,2009
 Plumas,1050.0,2009
 Mendocino,912470.0,2009
-<<<<<<< HEAD
 Nevada,49150.0,2009
 Placer,25031902.0,2009
 Yuba,25000.0,2009
@@ -71,12 +61,9 @@ Santa Cruz,165862.0,2009
 Alameda,41700.0,2009
 Contra Costa,404529.0,2009
 Santa Clara,155100.0,2009
-=======
->>>>>>> main
 Santa Clara,1500829.0,2009
 Shasta,23552.0,2009
 Siskiyou,15350.0,2009
-<<<<<<< HEAD
 Colusa,1500.0,2009
 Lake,163650.0,2009
 Napa,56621.0,2009
@@ -90,8 +77,6 @@ Kings,,2009
 Madera,88150.0,2009
 Mariposa,2902.0,2009
 Merced,700.0,2009
-=======
->>>>>>> main
 Riverside,565250.0,2009
 Monterey,52037.0,2009
 San Benito,22240.0,2009
@@ -100,11 +85,8 @@ San Bernardino,11000.0,2009
 San Diego,236815.0,2009
 San Luis Obispo,118822.0,2009
 Tulare,17962.0,2009
-<<<<<<< HEAD
 Calaveras,162977.0,2009
 Tuolumne,27600.0,2009
-=======
->>>>>>> main
 Amador,5000.0,2010
 El Dorado,52650.0,2010
 Sacramento,3800.0,2010
