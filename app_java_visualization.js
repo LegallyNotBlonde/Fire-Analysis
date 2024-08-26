@@ -48,8 +48,14 @@ d3.csv('Outputs/yearly_stats.csv').then(function(data) {
             };
             const layoutFires = {
                 title: `Total Fires Each Month in ${selectedYear}`,
-                xaxis: { title: 'Month' },
-                yaxis: { title: 'Total Fires' }
+                xaxis: { 
+                    title: 'Month #',
+                    titlefont: { size: 18 }  // Adjust this size as needed
+                },
+                yaxis: { 
+                    title: 'Total Fires',
+                    titlefont: { size: 18 }  // Adjust this size as needed
+                }
             };
             Plotly.newPlot('chart-fires', [traceFires], layoutFires);
 
@@ -63,8 +69,14 @@ d3.csv('Outputs/yearly_stats.csv').then(function(data) {
             };
             const layoutAcres = {
                 title: `Total Acres Burned by Month in ${selectedYear}`,
-                xaxis: { title: 'Month' },
-                yaxis: { title: 'Total Acres' }
+                xaxis: { 
+                    title: 'Month #',
+                    titlefont: { size: 18 }  // Adjust this size as needed
+                },
+                yaxis: { 
+                    title: 'Total Acres',
+                    titlefont: { size: 18 }  // Adjust this size as needed 
+                }
             };
             Plotly.newPlot('chart-acres', [traceAcres], layoutAcres);
 
@@ -78,8 +90,14 @@ d3.csv('Outputs/yearly_stats.csv').then(function(data) {
             };
             const layoutDuration = {
                 title: `Median Fire Duration in ${selectedYear}`,
-                xaxis: { title: 'Month' },
-                yaxis: { title: 'Median Fire Duration' }
+                xaxis: { 
+                    title: 'Month #',
+                    titlefont: { size: 18 }  // Adjust this size as needed
+                 },
+                yaxis: { 
+                    title: 'Median Fire Duration',
+                    titlefont: { size: 18 }  // Adjust this size as needed
+                 }
             };
             Plotly.newPlot('chart-duration', [traceDuration], layoutDuration);
 
@@ -93,8 +111,14 @@ d3.csv('Outputs/yearly_stats.csv').then(function(data) {
             };
             const layoutDeaths = {
                 title: `Total Deaths by Month in ${selectedYear}`,
-                xaxis: { title: 'Month' },
-                yaxis: { title: 'Total Deaths' }
+                xaxis: { 
+                    title: 'Month #',
+                    titlefont: { size: 18 }  // Adjust this size as needed
+                 },
+                yaxis: { 
+                    title: 'Total Deaths',
+                    titlefont: { size: 18 }  // Adjust this size as needed
+                 }
             };
             Plotly.newPlot('chart-deaths', [traceDeaths], layoutDeaths);
         }).catch(function(error) {

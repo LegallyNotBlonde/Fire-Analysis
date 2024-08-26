@@ -40,12 +40,12 @@ The number of fires fluctuate year by year and there is no consistent growth.
 However, on average fire burn during 13 days a month with astronomical financial losses.
 
 ### Key Takeaway for Viewers
-* This project, while independent and exploratory, offers valuable insights:
-    I.  **County-Level Risk Assessment:** Access localized fire statistics and risk assessments here. You can check information about your county [HERE](LINK TO BE ADDED).
-    II.  **Economic Impact:** In **2017**, California's fires cost over **$12 billion**. From **2008-2022, total damages exceeded $24 billion**, excluding human and environmental costs, and costs of containing fires.
-    *Yearly Statistics can be found [HERE](https://example.com/yearly-statistics).*
-    III.  **Policy Implications:** Preventative measures, though costly, could be more cost-effective than the devastating damages from wildfires.
-    IV.  **Real Estate Considerations:** When buying property in California, consider fire risks alongside other factors like earthquakes, as they significantly impact insurance costs.
+This project, while independent and exploratory, offers valuable insights:
+    * **County-Level Risk Assessment:** Access localized fire statistics and risk assessments here. You can check information about your county [HERE](LINK TO BE ADDED).
+    * **Economic Impact:** In **2017**, California's fires cost over **$12 billion**. From **2008-2022, total damages exceeded $24 billion**, excluding human and environmental costs, and costs of containing fires.
+    * Yearly Statistics can be found *[HERE](https://example.com/yearly-statistics).*
+    * **Policy Implications:** Preventative measures, though costly, could be more cost-effective than the devastating damages from wildfires.
+    * **Real Estate Considerations:** When buying property in California, consider fire risks alongside other factors like earthquakes, as they significantly impact insurance costs.
 ___
 
 ### Methodologies and Programming Languages Used
@@ -66,9 +66,16 @@ ___
 
 ___
 
-### Resourses and Data Limitations
+### Resourses 
 * [California State Geoportal](https://gis.data.ca.gov/)
 * [Youtube Link](https://www.youtube.com/watch?v=VEtICDT_ZmI) to display fire siren created by [Kermit the sound](https://www.youtube.com/@kermitthesound389)
 * AdobeStock - Image for the title presentation page
+___
+
+### Data Limitations
+* Our data focuses on fires 300+ acres, as smaller fires were underreported. 
+* Some fires spanned multiple counties; we tracked them by origin for accurate impact assessment. 
+* Financial losses cover basic property and content damage, excluding suppression costs, business interruptions, and insurance hikes.
 
 
+*This project is licensed under the GNU General Public License v3.0. For more details, please refer to the 'LICENSE' file.*
