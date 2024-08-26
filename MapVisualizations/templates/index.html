@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>California Fire Data Map</title>
+    <!-- Link to Mapbox CSS -->
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css" rel="stylesheet" />
+    <!-- Custom styles -->
+    <style>
+        body { margin: 0; padding: 0; }
+        #map { position: absolute; top: 50px; bottom: 0; width: 100%; }
+        #controls { position: absolute; top: 0; width: 100%; padding: 10px; background-color: white; z-index: 1; }
+    </style>
+</head>
+<body>
+    <div id="controls">
+        <label for="year-select">Select Year:</label>
+        <select id="year-select">
+            <option value="2020">2022</option>
+            <option value="2020">2021</option>
+            <option value="2020">2020</option>
+            <option value="2019">2019</option>
+            <option value="2018">2018</option>
+            <option value="2017">2017</option>    
+            <option value="2016">2016</option>
+            <option value="2015">2015</option>
+            <option value="2014">2014</option>
+            <option value="2013">2013</option>
+            <option value="2012">2012</option>
+            <option value="2011">2011</option>
+            <option value="2010">2010</option>
+            <option value="2009">2009</option>
+            <option value="2008">2008</option>
+            <!-- Add more years as needed -->
+        </select>
+
+        <label for="metric-select">Select Metric:</label>
+        <select id="metric-select">
+            <option value="acres">Acres Burned</option>
+            <option value="economic_damage">Economic Damage</option>
+        </select>
+
+        <button id="update-map">Update Map</button>
+    </div>
+    
+    <div id="map"></div>
+    <!-- Link to Mapbox JS -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js"></script>
+    <!-- Inject the Mapbox token into the JavaScript context -->
+    <script>
+        const mapboxToken = "{{ mapbox_token }}";
+    </script>
+    <!-- Link to your custom JS file -->
+    <script src="static/js/map.js"></script>
+</body>
+</html>
