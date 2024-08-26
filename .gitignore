@@ -36,3 +36,4 @@ Corrected_Duration_Long_Fires.csv
 #files that are too big for repo
 Filtered_California_Fire_Perimeters_2008_2022.geojson
 gdf_perim_with_counties_updated.geojson
+fires_perim_by_county_with_names.csv

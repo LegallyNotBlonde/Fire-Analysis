@@ -16,8 +16,10 @@
         <select id="metric-select">
             <option value="total_acres">Total Acres</option>
             <option value="total_deaths">Total Deaths</option>
-            <option value="total_damaged">Total Damaged</option>
-            <option value="total_damages">Total $ Damages</option>
+            <option value="total_damaged">Total Structures Damaged</option>
+            <option value="total_damages">Total Economic Damages</option>
+            <option value="active_fire_days">Active Fire Days</option>
+            
         </select>
 
         <label for="year-select">Select Year:</label>
@@ -39,11 +41,37 @@
             <option value="2008">2008</option>
             <!-- Add more years as needed -->
         </select>
-
         <button id="update-map">Update Map</button>
+        <select id="county-select">
+            <option value="">Select County to Zoom</option>
+            <!-- County options will be dynamically populated -->
+        </select>
+        <button id="full-extent">Full Extent</button>
     </div>
 
     <div id="map"></div>
+
+    <div id="data-table-container">
+        <h3 id="table-title">County: </h3> <!-- Dynamic title for the table -->
+        <table id="data-table">
+            <thead>
+                <tr>
+                    <th>Year</th>
+                    <th>Fire Name</th>
+                    <th>Acres</th>
+                    <th>Strux Destr</th>
+                    <th>Strux Dmgd</th>
+                    <th>Deaths FF</th>
+                    <th>Deaths Civil</th>
+                    <th>Duration</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data will be populated here dynamically -->
+            </tbody>
+        </table>
+    </div>
+     
     
     <!-- Link to the external JavaScript file -->
     <script src="static/maps.js"></script>

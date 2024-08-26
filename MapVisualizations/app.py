@@ -28,34 +28,37 @@ def index():
 
 @app.route('/data/<metric>/<int:year>')
 def data(metric, year):
-    # Update metrics_mapping to reference the correct columns in the appropriate tables
     metrics_mapping = {
-        'total_acres': 'SUM(Acres)',  # Assuming this is from the 'fires' table
-        'total_deaths': 'SUM(Deaths_FF + Deaths_Civil)',  # Assuming this is from the 'fires' table
-        'total_damaged': 'SUM(Strux_Destr + Strux_Dmgd)',  # Assuming this is from the 'fires' table
-        'total_damages': 'SUM(Tot_Damage)'  # Assuming this is from the 'extracted' table
+        'total_acres': 'SUM(Acres)',
+        'total_deaths': 'SUM(Deaths_FF + Deaths_Civil)',
+        'total_damaged': 'SUM(Strux_Destr + Strux_Dmgd)',
+        'total_damages': 'SUM(Tot_Damage)',  # Assuming Tot_Damage is from the extracted table
+        'active_fire_days': 'SUM(Unique_Fire_Days)'  # New metric from the unique_fire_days table
     }
 
-    # Check if the selected metric requires querying the 'extracted' table
-    if metric == 'total_damages':
+    if metric == 'active_fire_days':
+        # Query the unique_fire_days table
         sql_query = f"""
         SELECT County, {metrics_mapping[metric]} AS value
-        FROM extracted
+        FROM unique_fire_days
         WHERE Year = {year}
         GROUP BY County;
         """
-    else:
+    elif metric in metrics_mapping:
+        # Query the fires table (default behavior for other metrics)
         sql_query = f"""
         SELECT County, {metrics_mapping[metric]} AS value
         FROM fires
         WHERE Year = {year}
         GROUP BY County;
         """
+    else:
+        return jsonify({"error": "Invalid metric"}), 400
 
     # Query the database
     data = query_db(sql_query)
 
-    # Save the summary data to a CSV file
+    # Save the summary data to a CSV file (for debugging or processing purposes)
     csv_file = 'summary_data.csv'
     data.to_csv(csv_file, index=False)
     
@@ -82,6 +85,21 @@ def data(metric, year):
     geojson_data = counties_gdf.to_json()
 
     return jsonify(geojson_data)
+
+@app.route('/county_data/<county_name>')
+def county_data(county_name):
+    # Query the fires table for all data related to the selected county
+    sql_query = f"""
+    SELECT *
+    FROM fires
+    WHERE County = '{county_name}';
+    """
+    data = query_db(sql_query)
+
+    # Convert the data to JSON format
+    data_json = data.to_dict(orient='records')
+
+    return jsonify(data_json)
 
 
 @app.route('/draw_counties')
