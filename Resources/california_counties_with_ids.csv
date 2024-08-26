@@ -1,0 +1,59 @@
+County,Abbreviation,Unique_ID
+Alameda,ALA,1
+Alpine,ALP,2
+Amador,AMA,3
+Butte,BUT,4
+Calaveras,CAL,5
+Colusa,COL,6
+Contra Costa,CCO,7
+Del Norte,DN,8
+El Dorado,ED,9
+Fresno,FRE,10
+Glenn,GLE,11
+Humboldt,HUM,12
+Imperial,IMP,13
+Inyo,INY,14
+Kern,KER,15
+Kings,KIN,16
+Lake,LAK,17
+Lassen,LAS,18
+Los Angeles,LA,19
+Madera,MAD,20
+Marin,MRN,21
+Mariposa,MPA,22
+Mendocino,MEN,23
+Merced,MER,24
+Modoc,MOD,25
+Mono,MNO,26
+Monterey,MON,27
+Napa,NAP,28
+Nevada,NEV,29
+Orange,ORA,30
+Placer,PLA,31
+Plumas,PLU,32
+Riverside,RIV,33
+Sacramento,SAC,34
+San Benito,SBT,35
+San Bernardino,SBD,36
+San Diego,SD,37
+San Francisco,SF,38
+San Joaquin,SJ,39
+San Luis Obispo,SLO,40
+San Mateo,SM,41
+Santa Barbara,SB,42
+Santa Clara,SCL,43
+Santa Cruz,SCZ,44
+Shasta,SHA,45
+Sierra,SIE,46
+Siskiyou,SIS,47
+Solano,SOL,48
+Sonoma,SON,49
+Stanislaus,STA,50
+Sutter,SUT,51
+Tehama,TEH,52
+Trinity,TRI,53
+Tulare,TUL,54
+Tuolumne,TUO,55
+Ventura,VEN,56
+Yolo,YOL,57
+Yuba,YUB,58
