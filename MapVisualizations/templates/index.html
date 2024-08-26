@@ -3,26 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>California Fire Data Map</title>
-    <!-- Link to Mapbox CSS -->
-    <link href="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css" rel="stylesheet" />
-    <!-- Custom styles -->
+    <title>Fire Metrics Map</title>
+    <!-- Include Leaflet CSS and JS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <style>
         body { margin: 0; padding: 0; }
         #map { position: absolute; top: 50px; bottom: 0; width: 100%; }
-        #controls { position: absolute; top: 0; width: 100%; padding: 10px; background-color: white; z-index: 1; }
+        #controls {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 1;
+            background: white;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
     </style>
 </head>
 <body>
     <div id="controls">
+        <label for="metric-select">Select Metric:</label>
+        <select id="metric-select">
+            <option value="total_acres">Total Acres</option>
+            <option value="total_deaths">Total Deaths</option>
+            <option value="total_damaged">Total Damaged</option>
+            <option value="total_damages">Total Damages</option>
+        </select>
+
         <label for="year-select">Select Year:</label>
         <select id="year-select">
-            <option value="2020">2022</option>
-            <option value="2020">2021</option>
+            <option value="2022">2022</option>
+            <option value="2021">2021</option>
             <option value="2020">2020</option>
             <option value="2019">2019</option>
             <option value="2018">2018</option>
-            <option value="2017">2017</option>    
+            <option value="2017">2017</option>
             <option value="2016">2016</option>
             <option value="2015">2015</option>
             <option value="2014">2014</option>
@@ -35,23 +52,12 @@
             <!-- Add more years as needed -->
         </select>
 
-        <label for="metric-select">Select Metric:</label>
-        <select id="metric-select">
-            <option value="acres">Acres Burned</option>
-            <option value="economic_damage">Economic Damage</option>
-        </select>
-
         <button id="update-map">Update Map</button>
     </div>
-    
+
     <div id="map"></div>
-    <!-- Link to Mapbox JS -->
-    <script src="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js"></script>
-    <!-- Inject the Mapbox token into the JavaScript context -->
-    <script>
-        const mapboxToken = "{{ mapbox_token }}";
-    </script>
-    <!-- Link to your custom JS file -->
-    <script src="static/js/map.js"></script>
+    
+    <!-- Link to the external JavaScript file -->
+    <script src="static/maps.js"></script>
 </body>
 </html>
