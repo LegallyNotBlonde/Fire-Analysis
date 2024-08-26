@@ -1,45 +1,43 @@
-/* styles.css */
+body { margin: 0; padding: 0; }
 
-/* General page styles */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+#map { 
+    position: absolute; 
+    top: 50px; 
+    bottom: 0; 
+    width: 100%; 
 }
 
-#title {
-    text-align: center;
-    padding: 20px;
-    font-size: 24px;
-    font-weight: bold;
-    background-color: #f4f4f4;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* Container for the map and controls */
-#container {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-}
-
-/* Map styles */
-#map {
-    flex: 1;
-    position: relative;
-    height: 100%;  /* Ensures the map container has height */
-}
-
-/* Controls for dropdowns and other elements */
-#controls, #metric-controls {
+#controls {
     position: absolute;
     top: 10px;
     left: 10px;
+    z-index: 1;
     background: white;
     padding: 10px;
     border-radius: 5px;
-    z-index: 1000;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
-#metric-controls {
-    top: 80px; /* Positioning below the first set of controls */
+/* Legend styling */
+.info.legend {
+    background: white;
+    padding: 6px 8px;
+    font: 14px/18px Arial, Helvetica, sans-serif;  /* Adjusted line height */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.info.legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 12px;  /* Increased margin for better spacing */
+    margin-top: 4px;     /* Added margin to center-align text vertically */
+    opacity: 0.7;
+    border: 1px solid black;
+}
+
+.info.legend br {
+    clear: both; /* Ensure each label starts on a new line */
 }
