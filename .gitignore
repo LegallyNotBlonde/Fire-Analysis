@@ -25,6 +25,10 @@ DateExploreT copy.ipynb
 #Testing directory of Consistently formatted Excel files
 Resources/UniformXLSXs
 <<<<<<< HEAD
+#"Sandbox" version of USD impact to handle years scraped inconsistently due to pdf formatting difference
+USD_impact_data_ETL2.ipynb
+=======
+<<<<<<< HEAD
 
 Corrected_Duration_Long_Fires.csv
 =======
@@ -37,3 +41,4 @@ Corrected_Duration_Long_Fires.csv
 Filtered_California_Fire_Perimeters_2008_2022.geojson
 gdf_perim_with_counties_updated.geojson
 fires_perim_by_county_with_names.csv
+>>>>>>> main
