@@ -6,21 +6,9 @@
     <title>Fire Metrics Map</title>
     <!-- Include Leaflet CSS and JS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="static/style.css" />
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <style>
-        body { margin: 0; padding: 0; }
-        #map { position: absolute; top: 50px; bottom: 0; width: 100%; }
-        #controls {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            z-index: 1;
-            background: white;
-            padding: 10px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.5);
-        }
-    </style>
+
 </head>
 <body>
     <div id="controls">
@@ -29,7 +17,7 @@
             <option value="total_acres">Total Acres</option>
             <option value="total_deaths">Total Deaths</option>
             <option value="total_damaged">Total Damaged</option>
-            <option value="total_damages">Total Damages</option>
+            <option value="total_damages">Total $ Damages</option>
         </select>
 
         <label for="year-select">Select Year:</label>
