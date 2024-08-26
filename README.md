@@ -36,8 +36,8 @@ ___
 #### *Please find more details in the separate presentation included in this repo.*
 
 ### Actionable Steps
-* **Home Fireproofing**: Visit the **[CAL FIRE Ready]()** for Wildfire page for tips on using fire-resistant materials and creating defensible spaces around your property.
-* **Grant Opportunities:** Check the **[Grants and Funding page]()** to see if you qualify for grants, including those from the **[Marin Wildfire]()** Prevention Authority.
+* **Home Fireproofing**: Visit the **[CAL FIRE Ready](https://readyforwildfire.org)** for Wildfire page for tips on using fire-resistant materials and creating defensible spaces around your property.
+* **Grant Opportunities:** Check the **[Grants and Funding page](https://cafiresafecouncil.org/)** to see if you qualify for grants, including those from the **[Marin Wildfire](https://www.marinwildfire.org/)** Prevention Authority.
 * **Advocacy:** Advocate for stronger fire prevention policies by pushing local and federal governments to invest in forest management, public education, and soil moisture improvement strategies.
 
 ___
