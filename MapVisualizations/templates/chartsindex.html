@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annual Fire Statistics Dashboard</title>
+    <!-- Link to external stylesheet for styling -->
+    <link rel="stylesheet" href="../static/style_yearly.css">
+    <!-- Load Plotly.js library for charts -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+
+<body>
+    <!-- Main header of the dashboard -->
+    <h1>Annual Fire Statistics Dashboard</h1>
+    <!-- Add this to chartsindex.html -->
+    <div class="top-right-links">
+        <a href="/">Go to Home Page</a>
+    </div>
+
+
+    <!-- Instructional text for using the dropdown menu -->
+    <p>Select a year from the dropdown menu below to view relevant fire statistics. The dashboard will update automatically to reflect the selected year's data.</p>
+
+    <!-- Dropdown menu for selecting the year -->
+    <label for="year-select">Select Year:</label>
+    <select id="year-select"></select>
+
+    <!-- Section to display total statistics for the selected year -->
+    <div id="yearly-stats">
+        <h2>Total Stats for the Year</h2>
+        <div id="total-stats"></div>
+    </div>
+
+    <!-- Divs for displaying different charts -->
+    <div id="chart-fires"></div>
+    <div id="chart-acres"></div>
+    <div id="chart-duration"></div>
+    <div id="chart-deaths"></div>
+    <div id="chart-findamage"></div>
+
+    <!-- Load D3.js library for data manipulation -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <!-- Link to external JavaScript file for data visualization logic -->
+    <script src="../static/app_java_visualization.js"></script>
+</body>
+</html>

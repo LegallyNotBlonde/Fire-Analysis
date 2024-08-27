@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Initialize the Leaflet map centered on California with a zoom level of 6
-    var map = L.map('map').setView([37.7749, -122.4194], 6);
+    var map = L.map('map').setView([37.54, -118.48482082611778], 6);
 
     // Add a tile layer from OpenStreetMap with attribution
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
