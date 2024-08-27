@@ -1,0 +1,163 @@
+/* General body and map styling */
+body { 
+    margin: 0; 
+    padding: 0; 
+    font-size: 20px; /* Increase font size for readability */
+}
+
+/* Grid layout for map and controls */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns: one for controls and one for map */
+    grid-gap: 10px;
+    padding: 10px;
+    position: relative; /* Allows absolute positioning of controls */
+}
+
+/* Controls container styling */
+#map-controls-container {
+    grid-column: 1 / 2; /* First column */
+    position: relative; /* Keep controls positioned relative to this container */
+}
+
+/* Map container styling */
+#map-container {
+    grid-column: 2 / 3; /* Second column */
+    height: 75vh; /* Set height to 50% of the viewport */
+    border: 2px solid #ccc; /* Frame the map with a border */
+    box-sizing: border-box;
+    position: relative; /* Keep map elements contained */
+}
+
+/* Map styling */
+#map { 
+    width: 100%; 
+    height: 100%; /* Ensure it fills the container */
+    position: relative; /* Ensure it stays within the map container */
+}
+
+/* Adjust the controls container to stack items vertically */
+#controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Add space between the dropdowns and buttons */
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+/* Optional: Style the labels and selects to make them look consistent */
+#controls label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#controls select, #controls button {
+    padding: 8px;
+    font-size: 16px;
+    width: 100%; /* Make the dropdowns and buttons take up the full width */
+    box-sizing: border-box;
+}
+
+/* Add a bit of margin below the Update Map button to separate it from the dropdowns */
+#update-map {
+    margin-top: 10px;
+}
+
+
+/* Data Table Container */
+#data-table-container {
+    display: none; /* Initially hidden */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    overflow-y: auto;
+    background: #1c2b36; 
+    color: #fff; 
+    border-top: 1px solid #ccc;
+    padding: 10px;
+}
+
+#data-table-container h3 {
+    margin: 0;
+    padding: 10px;
+    background: #1c2b36; 
+    color: #fff; 
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #1c2b36; 
+    color: #fff; 
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #2c3e50;
+}
+
+th {
+    background-color: #1c2b36; 
+    font-weight: bold;
+    color: #fff; 
+}
+
+td {
+    background-color: #2c3e50; 
+    color: #fff; 
+}
+
+/* Legend styling */
+/* Legend styling for the left side */
+.info.legend {
+    top: auto; /* Retain current top position */
+    left: 100; 
+    background: white;
+    padding: 6px 8px;
+    font: 14px/18px Arial, Helvetica, sans-serif;  /* Adjusted line height */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    border: 1px solid black;
+
+}
+
+.info.legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    vertical-align: middle;
+    line-height: 18px;
+    opacity: 0.7;
+    border: 1px solid black;
+}
+
+.info.legend br {
+    clear: both;
+}
+
+/* Dashboard styling */
+h1 {
+  color: #FF0000; /* Bright red */
+  font-size: 48px;
+  margin: 10px 0;
+}
+
+.bar-chart {
+  background-color: #FFA500; /* Bright orange */
+  margin: 10px 0;
+}
+
+/* Dashboard Container for Charts */
+#dashboard-container {
+    padding: 20px; /* Add some padding around the dashboard */
+    box-sizing: border-box;
+    background-color: #f4f4f4; /* Set a light background color for the dashboard */
+    margin-top: 10px; /* Add space above the dashboard */
+    clear: both; /* Ensure it clears any floating elements */
+}
