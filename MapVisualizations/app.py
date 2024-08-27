@@ -2,11 +2,7 @@ from flask import Flask, render_template, jsonify
 import sqlite3
 import pandas as pd
 import os
-from dotenv import load_dotenv
 import geopandas as gpd
-
-# Load environment variables from .env file
-load_dotenv()
 
 app = Flask(__name__)
 
@@ -23,8 +19,12 @@ def query_db(query):
     return df
 
 @app.route('/')
-def index():
+def home():
     return render_template('index.html')
+
+@app.route('/chartsindex.html')
+def charts():
+    return render_template('chartsindex.html')
 
 @app.route('/data/<metric>/<int:year>')
 def data(metric, year):
@@ -36,8 +36,17 @@ def data(metric, year):
         'active_fire_days': 'SUM(Unique_Fire_Days)'  # New metric from the unique_fire_days table
     }
 
-    if metric == 'active_fire_days':
-        # Query the unique_fire_days table
+    # Check if the selected metric requires querying a specific table
+    if metric == 'total_damages':
+        # Query the 'extracted' table for 'total_damages'
+        sql_query = f"""
+        SELECT County, {metrics_mapping[metric]} AS value
+        FROM extracted
+        WHERE Year = {year}
+        GROUP BY County;
+        """
+    elif metric == 'active_fire_days':
+        # Query the 'unique_fire_days' table for 'active_fire_days'
         sql_query = f"""
         SELECT County, {metrics_mapping[metric]} AS value
         FROM unique_fire_days
@@ -45,7 +54,7 @@ def data(metric, year):
         GROUP BY County;
         """
     elif metric in metrics_mapping:
-        # Query the fires table (default behavior for other metrics)
+        # Query the 'fires' table for all other valid metrics
         sql_query = f"""
         SELECT County, {metrics_mapping[metric]} AS value
         FROM fires
@@ -54,6 +63,7 @@ def data(metric, year):
         """
     else:
         return jsonify({"error": "Invalid metric"}), 400
+
 
     # Query the database
     data = query_db(sql_query)

@@ -1,0 +1,53 @@
+/* Container to hold the links */
+.top-right-links {
+  position: absolute;
+  top: 10px; /* Adjust the distance from the top as needed */
+  right: 10px; /* Adjust the distance from the right as needed */
+  display: flex; /* Arrange links side by side */
+  gap: 15px; /* Space between the links */
+}
+
+/* Basic link styling */
+.top-right-links a {
+  color: #007BFF; /* Blue color for links */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Make links bold */
+}
+
+/* Link style on hover */
+.top-right-links a:hover {
+  color: #0056b3; /* Darker blue when hovered */
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Link style on active (clicked) */
+.top-right-links a:active {
+  color: #004080; /* Even darker blue when clicked */
+}
+
+/* Ensure full width and height for map and body */
+html, body, #map {
+  padding: 0;
+  margin: 48px 48px; /* Increase left and right margins, top and bottom remain 10px */
+  width: calc(100% - 80px); /* Adjust the width to account for increased left and right margins */
+  height: calc(100% - 40px); /* Adjust the height to account for top and bottom margins */
+}
+
+/* Set Fire Statistics Dashboard title to bright red and enlarge it */
+h1 {
+  color: #FF0000; /* Bright red */
+  font-size: 48px;
+  margin: 10px 0; /* Add top and bottom margins */
+}
+
+/* Enlarge the font size for all text on the page */
+body, p, label, select, h2 {
+  font-size: 20px;
+  margin: 10px 0; /* Add top and bottom margins */
+}
+
+/* Make the bar charts bright orange */
+.bar-chart {
+  background-color: #FFA500; /* Bright orange */
+  margin: 10px 0; /* Add margin around the bar charts */
+}

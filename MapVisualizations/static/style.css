@@ -1,24 +1,83 @@
-body { 
-    margin: 0; 
-    padding: 0; 
+/* Container to hold the links */
+.top-right-links {
+    position: absolute;
+    top: 10px; /* Adjust the distance from the top as needed */
+    right: 10px; /* Adjust the distance from the right as needed */
+    display: flex; /* Arrange links side by side */
+    gap: 15px; /* Space between the links */
+}
+
+/* Basic link styling */
+.top-right-links a {
+    color: #007BFF; /* Blue color for links */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make links bold */
+}
+
+/* Link style on hover */
+.top-right-links a:hover {
+    color: #0056b3; /* Darker blue when hovered */
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Link style on active (clicked) */
+.top-right-links a:active {
+    color: #004080; /* Even darker blue when clicked */
+}
+
+
+#top-image-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+#top-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#image-title {
+    position: absolute;
+    top: 10px; /* Position the title 10px from the top of the image */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust the position to be truly centered */
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for readability */
+    padding: 10px 20px; /* Add padding for better readability */
+    font-size: 36px; /* Increase font size for a bigger title */
+    font-weight: bold;
+    z-index: 1000; /* Ensure it's on top of other elements */
+    text-align: center; /* Center the text inside the title box */
 }
 
 #map { 
     position: absolute; 
-    top: 50px; 
-    bottom: 0px; /* Adjusted to make space for the taller table at the bottom */
+    top: 150px; /* This will move the map down to make space for the title and controls */
+    bottom: 0;
     width: 100%; 
 }
 
 #controls {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    z-index: 1;
+    position: absolute; /* Keep it positioned relative to the map */
+    top: 175px; /* Adjust as needed for spacing from the top */
+    right: 10px; /* Position it to the right */
+    z-index: 1000;
     background: white;
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 10px; /* Adds space between the items */
+}
+
+#controls label, 
+#controls select, 
+#controls button {
+    margin-bottom: 5px; /* Optional: Adds a small margin below each item */
+    width: 100%; /* Ensure full width for dropdowns/buttons */
 }
 
 /* Container for the data table */
@@ -36,7 +95,6 @@ body {
     padding: 10px;
 }
 
-
 #data-table-container h3 {
     margin: 0;
     padding: 10px;
@@ -46,7 +104,7 @@ body {
 
 table {
     width: 100%;
-    border-collapse: collapse;
+    border-collapse: collapse; /* Ensures borders merge nicely */
     background: #1c2b36; /* Dark background */
     color: #fff; /* White text */
 }
@@ -54,19 +112,26 @@ table {
 th, td {
     padding: 8px;
     text-align: left;
-    border-bottom: 1px solid #2c3e50; /* Slightly lighter border */
+    border-bottom: 2px solid #a1afbe; /* Slightly lighter border to separate rows */
+}
+
+tr {
+    border-bottom: 2px solid #a1afbe; /* Add a border at the bottom of each row */
 }
 
 th {
     background-color: #1c2b36; /* Same background as table */
     font-weight: bold;
     color: #fff; /* White text color */
+    border-bottom: 2px solid #2c3e50; /* Thicker border under the header row */
 }
 
 td {
     background-color: #2c3e50; /* Slightly lighter background for rows */
     color: #fff; /* White text color */
 }
+
+
 
 /* Legend styling */
 .info.legend {
