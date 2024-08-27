@@ -47,12 +47,13 @@ The data underscores the unpredictable nature of wildfires and their increasing 
 ___
 
 ### Key Takeaway for Viewers
+
 This project, while independent and exploratory, offers valuable insights:
-    * **County-Level Risk Assessment:** Access localized fire statistics and risk assessments here. You can check information about your county (slide 8 of our presentation).
-    * **Economic Impact:** In **2017**, California's fires cost over **$12 billion**. From **2008-2022, total damages exceeded $24 billion**, excluding human and environmental costs, and costs of containing fires.
-    * Yearly Statistics can be found *[HERE](http://127.0.0.1:5500/index.html)*. More charts are provided in our presentation.
-    * **Policy Implications:** Advocate for stronger preventative measures at local and state levels. While costly, these measures could be more cost-effective than facing devastating wildfire damages.
-    * **Real Estate Considerations:** When buying property in California, consider fire risks alongside other factors like earthquakes, as they significantly impact insurance costs.
+    <p> * **County-Level Risk Assessment:** Access localized fire statistics and risk assessments here. You can check information about your county (slide 8 of our presentation).
+    <p> * **Economic Impact:** In **2017**, California's fires cost over **$12 billion**. From **2008-2022, total damages exceeded $24 billion**, excluding human and environmental costs, and costs of containing fires.
+    <p> * Yearly Statistics please look at th the highlights above and check our presentation for more information.
+    <p> * **Policy Implications:** Advocate for stronger preventative measures at local and state levels. While costly, these measures could be more cost-effective than facing devastating wildfire damages.
+    <p> * **Real Estate Considerations:** When buying property in California, consider fire risks alongside other factors like earthquakes, as they significantly impact insurance costs.
 ___
 
 ### Ethical Consideration
@@ -66,7 +67,7 @@ ___
 
 ### Methodologies and Programming Languages Used
 * Pandas libraries 
-* Python (including but not limited to '**ast**' to process trees of the Python abstract syntax grammar)
+* Python (including but not limited to '**pdfplumber**' and '**ast**' to process trees of the Python abstract syntax grammar)
 * SQL 
 * JavaScript
 
@@ -86,4 +87,5 @@ ___
 * [California State Geoportal](https://gis.data.ca.gov/)
 * [Youtube Link](https://www.youtube.com/watch?v=VEtICDT_ZmI) to display fire siren created by [Kermit the sound](https://www.youtube.com/@kermitthesound389)
 * AdobeStock - Image for the title presentation page
+* We used ChatGPT and Google.com to verify fire deatils during cleaning and validating our data
 * ChatGPT provided an idea for 'ast' library to process trees of the Python abstract syntax grammar
