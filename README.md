@@ -67,7 +67,7 @@ ___
 
 ### Methodologies and Programming Languages Used
 * Pandas libraries 
-* Python (including but not limited to '**Flask**', '**pdfplumber**' and '**ast**' to process trees of the Python abstract syntax grammar)
+* Python (including but not limited to '**Flask**', '**pdfplumber**', '**stats**, and '**ast**' (the latter was used to process trees of the Python abstract syntax grammar)).
 * SQL 
 * JavaScript
 * To initiate the dynamic visualization using Flask, navigate to Fire-Analysis/MapVisualizations folder, run python app.py, and open the [HTML page](http://127.0.0.1:5000/)
