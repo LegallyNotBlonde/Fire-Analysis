@@ -67,20 +67,21 @@ ___
 
 ### Methodologies and Programming Languages Used
 * Pandas libraries 
-* Python (including but not limited to '**pdfplumber**' and '**ast**' to process trees of the Python abstract syntax grammar)
+* Python (including but not limited to '**Flask**', '**pdfplumber**' and '**ast**' to process trees of the Python abstract syntax grammar)
 * SQL 
 * JavaScript
+* To initiate the dynamic visualization using Flask, navigate to Fire-Analysis/masVisualizations folder, run python app.py, and open the [HTML page](http://127.0.0.1:5000/)
 
 ___
 
 ### Repo Structure
+* **Files with codes** have **self-explanatory names** and are available in the [main body of the repo](https://github.com/LegallyNotBlonde/Fire-Analysis)
+* **Files with codes to create interactive map and charts** and stoed [MapsVisualizations](https://github.com/LegallyNotBlonde/Fire-Analysis/tree/main/MapVisualizations)
 * **[Resources folder](https://github.com/LegallyNotBlonde/Fire-Analysis/tree/main/Resources)** contains original, raw data sets
 * **[Outputs](https://github.com/LegallyNotBlonde/Fire-Analysis/tree/main/Outputs)** includes transformed data and tables
 * **[Charts](https://github.com/LegallyNotBlonde/Fire-Analysis/tree/main/Charts)** folder contains various visualization displays
-* **Files with codes** have **self-explanatory names** and are available in the [main body of the repo](https://github.com/LegallyNotBlonde/Fire-Analysis)
 * **[Presentation](https://docs.google.com/presentation/d/18218T6EQrjeQu0vUXJoN1WikxMXPLT6Y-v4c-PHHHL0/edit#slide=id.p)** with more information about the projects and all necessary charts.
 * ### *[Link to the interactive visualization](http://127.0.0.1:5500/index.html)*
-
 ___
 
 ### Resourses 
