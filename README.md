@@ -13,7 +13,7 @@ ___
 * Using code, we extracted this data into Excel, parsed the relevant pages, and transformed it into key metrics using Pandas libraries. 
 * We then created an SQL schema to store the data and used JavaScript to build HTML pages with interactive dashboards. 
 * Pandas was also used for various visualizations. Due to our group's limited size and time constraints, we divided the project into smaller tasks, allowing us to work in parallel. 
-* This approach has lead to multiple code files in this repository.
+* This approach has led to multiple code files in this repository.
 
 ### Purpose
 
@@ -51,7 +51,7 @@ ___
 This project, while independent and exploratory, offers valuable insights:
     <p> * **County-Level Risk Assessment:** Access localized fire statistics and risk assessments here. You can check information about your county (slide 8 of our presentation).
     <p> * **Economic Impact:** In **2017**, California's fires cost over **$12 billion**. From **2008-2022, total damages exceeded $24 billion**, excluding human and environmental costs, and costs of containing fires.
-    <p> * Yearly Statistics please look at th the highlights above and check our presentation for more information.
+    <p> * Yearly Statistics please look at the highlights above and check our presentation or html page for more information.
     <p> * **Policy Implications:** Advocate for stronger preventative measures at local and state levels. While costly, these measures could be more cost-effective than facing devastating wildfire damages.
     <p> * **Real Estate Considerations:** When buying property in California, consider fire risks alongside other factors like earthquakes, as they significantly impact insurance costs.
 ___
@@ -70,23 +70,23 @@ ___
 * Python (including but not limited to '**Flask**', '**pdfplumber**' and '**ast**' to process trees of the Python abstract syntax grammar)
 * SQL 
 * JavaScript
-* To initiate the dynamic visualization using Flask, navigate to Fire-Analysis/masVisualizations folder, run python app.py, and open the [HTML page](http://127.0.0.1:5000/)
+* To initiate the dynamic visualization using Flask, navigate to Fire-Analysis/MapVisualizations folder, run python app.py, and open the [HTML page](http://127.0.0.1:5000/)
 
 ___
 
 ### Repo Structure
 * **Files with codes** have **self-explanatory names** and are available in the [main body of the repo](https://github.com/LegallyNotBlonde/Fire-Analysis).
-* **Files with codes** to create **interactive map and charts** are located in [MapsVisualizations](https://github.com/LegallyNotBlonde/Fire-Analysis/tree/main/MapVisualizations) folder.
+* **Files with codes** to create **interactive map and charts** are located in [MapVisualizations](https://github.com/LegallyNotBlonde/Fire-Analysis/tree/main/MapVisualizations) folder.
 * **[Resources folder](https://github.com/LegallyNotBlonde/Fire-Analysis/tree/main/Resources)** contains original, raw data sets.
 * **[Outputs](https://github.com/LegallyNotBlonde/Fire-Analysis/tree/main/Outputs)** includes transformed data and tables.
 * **[Charts](https://github.com/LegallyNotBlonde/Fire-Analysis/tree/main/Charts)** folder contains various visualization displays.
-* **[Presentation](https://docs.google.com/presentation/d/18218T6EQrjeQu0vUXJoN1WikxMXPLT6Y-v4c-PHHHL0/edit#slide=id.p)** with more information about the projects and all necessary charts.
+* **[Online Presentation](https://docs.google.com/presentation/d/18218T6EQrjeQu0vUXJoN1WikxMXPLT6Y-v4c-PHHHL0/edit#slide=id.p)** and **[PDF presentation](https://github.com/LegallyNotBlonde/Fire-Analysis/blob/main/The_Growing_Threat_of_Wildfires.pdf)** with more information about the projects and all necessary charts.
 * ### *[Link to the interactive visualization](http://127.0.0.1:5500/index.html)*
 ___
 
-### Resourses 
-* [California State Geoportal](https://gis.data.ca.gov/)
-* [Youtube Link](https://www.youtube.com/watch?v=VEtICDT_ZmI) to display fire siren created by [Kermit the sound](https://www.youtube.com/@kermitthesound389)
-* AdobeStock - Image for the title presentation page
-* We used ChatGPT and Google.com to verify fire deatils during cleaning and validating our data
-* ChatGPT provided an idea for 'ast' library to process trees of the Python abstract syntax grammar
+### Resources
+* [California State Geoportal](https://gis.data.ca.gov/).
+* [Youtube Link](https://www.youtube.com/watch?v=VEtICDT_ZmI) to display fire siren created by [Kermit the sound](https://www.youtube.com/@kermitthesound389).
+* AdobeStock - Image for the title presentation page.
+* We used ChatGPT and Google.com to verify fire details during cleaning and validating our data.
+* ChatGPT provided an idea for 'ast' library to process trees of the Python abstract syntax grammar.
