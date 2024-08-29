@@ -80,7 +80,7 @@ ___
 * **[Resources folder](https://github.com/LegallyNotBlonde/Fire-Analysis/tree/main/Resources)** contains original, raw data sets.
 * **[Outputs](https://github.com/LegallyNotBlonde/Fire-Analysis/tree/main/Outputs)** includes transformed data and tables.
 * **[Charts](https://github.com/LegallyNotBlonde/Fire-Analysis/tree/main/Charts)** folder contains various visualization displays.
-* **[Online Presentation](https://docs.google.com/presentation/d/18218T6EQrjeQu0vUXJoN1WikxMXPLT6Y-v4c-PHHHL0/edit#slide=id.p)** and **[PDF presentation](https://github.com/LegallyNotBlonde/Fire-Analysis/blob/main/The_Growing_Threat_of_Wildfires.pdf)** with more information about the projects and all necessary charts.
+* **[Google Slides (PowerPoint) presentation](https://docs.google.com/presentation/d/18218T6EQrjeQu0vUXJoN1WikxMXPLT6Y-v4c-PHHHL0/edit#slide=id.p)** contains comprehensive project details, graphs, and chart analysis in **speaker notes**. The accompanying **[PDF presentation](https://github.com/LegallyNotBlonde/Fire-Analysis/blob/main/The_Growing_Threat_of_Wildfires.pdf)** mirrors the presentation, excluding the speaker notes.
 * ### *[Link to the interactive visualization](http://127.0.0.1:5000/)*
 ___
 
