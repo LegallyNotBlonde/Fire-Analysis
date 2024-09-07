@@ -1,4 +1,4 @@
-# Fire-Analysis: Confronting the Growing Threat of Wildfires: Urgent Actions and Impacts
+# Fire-Analysis: The Growing Threat of Wildfires: Urgent Actions and Impacts
 
 ## Project Partners:
 
