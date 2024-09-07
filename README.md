@@ -75,13 +75,28 @@ ___
 ___
 
 ### Repo Structure
-* **Files with codes** have **self-explanatory names** and are available in the [main body of the repo](https://github.com/LegallyNotBlonde/Fire-Analysis).
+* ### *[Link to the interactive visualization](http://127.0.0.1:5000/)*
 * **Files with codes** to create **interactive map and charts** are located in [MapVisualizations](https://github.com/LegallyNotBlonde/Fire-Analysis/tree/main/MapVisualizations) folder.
 * **[Resources folder](https://github.com/LegallyNotBlonde/Fire-Analysis/tree/main/Resources)** contains original, raw data sets.
 * **[Outputs](https://github.com/LegallyNotBlonde/Fire-Analysis/tree/main/Outputs)** includes transformed data and tables.
 * **[Charts](https://github.com/LegallyNotBlonde/Fire-Analysis/tree/main/Charts)** folder contains various visualization displays.
-* **[Google Slides (PowerPoint) presentation](https://docs.google.com/presentation/d/18218T6EQrjeQu0vUXJoN1WikxMXPLT6Y-v4c-PHHHL0/edit#slide=id.p)** contains comprehensive project details, graphs, and chart analysis in **speaker notes**. The accompanying **[PDF presentation](https://github.com/LegallyNotBlonde/Fire-Analysis/blob/main/The_Growing_Threat_of_Wildfires.pdf)** mirrors the presentation, excluding the speaker notes.
-* ### *[Link to the interactive visualization](http://127.0.0.1:5000/)*
+* **[Google Slides (PowerPoint) presentation](https://docs.google.com/presentation/d/18218T6EQrjeQu0vUXJoN1WikxMXPLT6Y-v4c-PHHHL0/edit#slide=id.p)** contains comprehensive project details, graphs, and **chart analysis in speaker notes**. The accompanying PDF presentation called "The_Growing_Threat_of_Wildfires.pdf" mirrors the presentation, excluding the speaker notes.
+
+* **Files with codes** have **self-explanatory names** and are available in the [main body of the repo](https://github.com/LegallyNotBlonde/Fire-Analysis):
+1. CA_wildfire_data_ETL.ipbn - 
+2. CombineDataset.ipynb
+3. CreateDataBase.ipbn
+4. FirePerimter_data_extract.ipynb
+5. FireStatsToMapPrep.ipynb
+6. USD_Impact_data_ETL.ipynb
+7. USD_Impact_data_ETL2.ipynb
+8. calculating_key_metrics_for_visualization_pandas.ipynb - calculates fire numbers, median durations, the number of deaths, and the total damages both by month and by year
+9. cleaning_extracting_data_for_2008-2022.ipynb - pandas libraries to clean the data and check fire distribution
+10. png files are to display some graphs in the Readme file.
+11. scrapePDFforTables.ipynb - pandas code to scrape data from pdf sources.
+12. yearly_kpi_plots.ipynb - 
+
+
 ___
 
 ### Resources
