@@ -35,6 +35,8 @@ ___
 
 #### *Please find more details in the [separate presentation](https://docs.google.com/presentation/d/18218T6EQrjeQu0vUXJoN1WikxMXPLT6Y-v4c-PHHHL0/edit#slide=id.g2815e3fa5e3_0_54) included in this repo.*
 
+### ***[Link to the interactive visualization](http://127.0.0.1:5000/)***
+
 ### Actionable Steps
 * **Home Fireproofing**: Visit the **[CAL FIRE Ready](https://readyforwildfire.org)** for Wildfire page for tips on using fire-resistant materials and creating defensible spaces around your property.
 * **Grant Opportunities:** Check the **[Grants and Funding page](https://cafiresafecouncil.org/)** to see if you qualify for grants, including those from the **[Marin Wildfire](https://www.marinwildfire.org/)** Prevention Authority.
@@ -75,7 +77,6 @@ ___
 ___
 
 ### Repo Structure
-* ### *[Link to the interactive visualization](http://127.0.0.1:5000/)*
 
 * **Files with codes** have **self-explanatory names** and are available in the main body of the repo.
 <p> *Here is the right order to read/execute the files:*
@@ -94,7 +95,7 @@ ___
 12. png files are attached to display some graphs in the Readme file.
 
 13.  ***Files with codes*** to create **interactive map and charts** are located in [MapVisualizations](https://github.com/LegallyNotBlonde/Fire-Analysis/tree/main/MapVisualizations) folder.
-14. * **[Google Slides (PowerPoint) presentation](https://docs.google.com/presentation/d/18218T6EQrjeQu0vUXJoN1WikxMXPLT6Y-v4c-PHHHL0/edit#slide=id.p)** * contains comprehensive project details, graphs, and **chart analysis in speaker notes**. The accompanying PDF presentation called "The_Growing_Threat_of_Wildfires.pdf" mirrors the presentation, excluding the speaker notes.
+14. ***[Google Slides (PowerPoint) presentation](https://docs.google.com/presentation/d/18218T6EQrjeQu0vUXJoN1WikxMXPLT6Y-v4c-PHHHL0/edit#slide=id.p)*** contains comprehensive project details, graphs, and **chart analysis in speaker notes**. The accompanying PDF presentation called ***"The_Growing_Threat_of_Wildfires.pdf"*** mirrors the presentation, excluding the speaker notes.
 
 * **[Resources folder](https://github.com/LegallyNotBlonde/Fire-Analysis/tree/main/Resources)** contains original, raw data sets.
 * **[Outputs](https://github.com/LegallyNotBlonde/Fire-Analysis/tree/main/Outputs)** includes transformed data and tables.
