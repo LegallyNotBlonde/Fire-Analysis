@@ -35,7 +35,6 @@ ___
 
 #### *Please find more details in the [separate presentation](https://docs.google.com/presentation/d/18218T6EQrjeQu0vUXJoN1WikxMXPLT6Y-v4c-PHHHL0/edit#slide=id.g2815e3fa5e3_0_54) included in this repo.*
 
-### ***[Link to the interactive visualization](http://127.0.0.1:5000/)***
 
 ### Actionable Steps
 * **Home Fireproofing**: Visit the **[CAL FIRE Ready](https://readyforwildfire.org)** for Wildfire page for tips on using fire-resistant materials and creating defensible spaces around your property.
@@ -72,14 +71,14 @@ ___
 * Python (including but not limited to '**Flask**', '**pdfplumber**', '**stats**, and '**ast**' (the latter was used to process trees of the Python abstract syntax grammar)).
 * SQL 
 * JavaScript
-* To initiate the dynamic visualization using Flask, navigate to Fire-Analysis/MapVisualizations folder, run python app.py, and open the [HTML page](http://127.0.0.1:5000/)
+* To initiate the dynamic visualization using Flask, navigate to Fire-Analysis/MapVisualizations folder, run python app.py, and open the **[HTML page](http://127.0.0.1:5000/)**
 
 ___
 
 ### Repo Structure
 
 * **Files with codes** have **self-explanatory names** and are available in the main body of the repo.
-<p> *Here is the right order to read/execute the files:*
+<p> * Here is the right order to read/execute the files: *
 
 1. ***FirePerimeter_data_extract.ipynb*** - json to extract data from the source and create a map
 2. ***scrapePDFforTables.ipynb*** - pandas code to scrape data from pdf sources into excel files
