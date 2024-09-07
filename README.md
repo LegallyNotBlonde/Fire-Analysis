@@ -85,14 +85,14 @@ ___
 * **Files with codes** have **self-explanatory names** and are available in the [main body of the repo](https://github.com/LegallyNotBlonde/Fire-Analysis).
 Here is the right order to read files:
 1. * **scrapePDFforTables.ipynb** * - pandas code to scrape data from pdf sources into excel files
-2. * **FirePerimeter_data_extract.ipynb** * - json to extract data from the source and create a map from CAL fire spatial data
+2. * **FirePerimeter_data_extract.ipynb** * - json to extract data from the source and create a map from CAL fire spatial data and create .gif of fire perimeters from 2008 to 2023
 3. * **CA_wildfire_data_ETL.ipynb** * - extracting data from xls files for 2020-2022
 4. * **cleaning_extracting_data_for_2008-2022.ipynb** * - pandas libraries to extract data for 2008-2019, combine with 2020-2022, clean the data, and check fire distribution
 5. * **USD_Impact_data_ETL.ipynb** * - extracting economic damages from excel files
 6. * **USD_Impact_data_ETL2.ipynb** * - extracting economic damages part 2
 7. * **calculating_key_metrics_for_visualization_pandas.ipynb** * - calculates fire numbers, median durations, the number of deaths, and the total damages both by month and by year
 8. * **yearly_kpi_plots.ipynb** * - pandas code to create yearly plots to show fire trends during the analysed period 
-9. * **CombineDataset.ipynb** * -  
+9. * **CombineDataset.ipynb** * -  combine extracted econimc damages with fire stats
 10. * **FireStatsToMapPrep.ipynb** * - Taking cleaned data and adjusting structure for best use with maps 
 11. * **CreateDataBase.ipynb** * - taking extracted, cleaned data and loading into SQL database
  
