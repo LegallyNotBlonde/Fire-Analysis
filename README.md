@@ -77,8 +77,9 @@ ___
 ### Repo Structure
 * ### *[Link to the interactive visualization](http://127.0.0.1:5000/)*
 
-* **Files with codes** have **self-explanatory names** and are available in the main body of the repo:
-*Here is the right order to read/execute the files:*
+* **Files with codes** have **self-explanatory names** and are available in the main body of the repo.
+<p> *Here is the right order to read/execute the files:*
+
 1. ***FirePerimeter_data_extract.ipynb*** - json to extract data from the source and create a map
 2. ***scrapePDFforTables.ipynb*** - pandas code to scrape data from pdf sources into excel files
 3. ***CA_wildfire_data_ETL.ipynb*** extracting data from xls files for 2020-2022
