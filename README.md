@@ -93,8 +93,8 @@ Here is the right order to read files:
 7. * **calculating_key_metrics_for_visualization_pandas.ipynb** * - calculates fire numbers, median durations, the number of deaths, and the total damages both by month and by year
 8. * **yearly_kpi_plots.ipynb** * - pandas code to create yearly plots to show fire trends during the analysed period 
 9. * **CombineDataset.ipynb** * -  
-10.* **FireStatsToMapPrep.ipynb** * - Taking cleaned data and adjusting structure for best use with maps 
-11.* **CreateDataBase.ipynb** * - taking extracted, cleaned data and loading into SQL database
+10. * **FireStatsToMapPrep.ipynb** * - Taking cleaned data and adjusting structure for best use with maps 
+11. * **CreateDataBase.ipynb** * - taking extracted, cleaned data and loading into SQL database
  
 12. png files are attached to display some graphs in the Readme file.
 
