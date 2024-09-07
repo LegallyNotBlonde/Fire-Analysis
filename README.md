@@ -76,26 +76,29 @@ ___
 
 ### Repo Structure
 * ### *[Link to the interactive visualization](http://127.0.0.1:5000/)*
-* **Files with codes** to create **interactive map and charts** are located in [MapVisualizations](https://github.com/LegallyNotBlonde/Fire-Analysis/tree/main/MapVisualizations) folder.
-* **[Resources folder](https://github.com/LegallyNotBlonde/Fire-Analysis/tree/main/Resources)** contains original, raw data sets.
-* **[Outputs](https://github.com/LegallyNotBlonde/Fire-Analysis/tree/main/Outputs)** includes transformed data and tables.
-* **[Charts](https://github.com/LegallyNotBlonde/Fire-Analysis/tree/main/Charts)** folder contains various visualization displays.
-* **[Google Slides (PowerPoint) presentation](https://docs.google.com/presentation/d/18218T6EQrjeQu0vUXJoN1WikxMXPLT6Y-v4c-PHHHL0/edit#slide=id.p)** contains comprehensive project details, graphs, and **chart analysis in speaker notes**. The accompanying PDF presentation called "The_Growing_Threat_of_Wildfires.pdf" mirrors the presentation, excluding the speaker notes.
 
-* **Files with codes** have **self-explanatory names** and are available in the [main body of the repo](https://github.com/LegallyNotBlonde/Fire-Analysis).
-Here is the right order to read files:
+* **Files with codes** have **self-explanatory names** and are available in the main body of the repo:
+*Here is the right order to read/execute the files:*
 1. * **FirePerimeter_data_extract.ipynb** * - json to extract data from the source and create a map
 2. * **scrapePDFforTables.ipynb** * - pandas code to scrape data from pdf sources into excel files
 3. * **CA_wildfire_data_ETL.ipynb** * - extracting data from xls files for 2020-2022
 4. * **cleaning_extracting_data_for_2008-2022.ipynb** * - pandas libraries to extract data for 2008-2019, combine with 2020-2022, clean the data, and check fire distribution
-5. * **calculating_key_metrics_for_visualization_pandas.ipynb** * - calculates fire numbers, median durations, the number of deaths, and the total damages both by month and by year
-6. * **yearly_kpi_plots.ipynb** * - pandas code to create yearly plots to show fire trends during the analysed period
-7. * **CombineDataset.ipynb** * - 
-8. * **CreateDataBase.ipynb** * - 
-9. * **FireStatsToMapPrep.ipynb** * - 
-10. * **USD_Impact_data_ETL.ipynb** * - 
-11. * **USD_Impact_data_ETL2.ipynb** * - 
+5. * **USD_Impact_data_ETL.ipynb** * - calculates financial impact of fires
+6. * **USD_Impact_data_ETL2.ipynb** * - calculates financial impact of fires
+7. * **calculating_key_metrics_for_visualization_pandas.ipynb** * - calculates fire numbers, median durations, the number of deaths, and the total damages both by month and by year
+8. * **yearly_kpi_plots.ipynb** * - pandas code to create yearly plots to show fire trends during the analysed period
+9. * **CreateDataBase.ipynb** * - reate and query SQLite database
+10. * **CombineDataset.ipynb** * - merge and analyze county data
+11. * **FireStatsToMapPrep.ipynb** * -  convert statistical data for map usage
 12. png files are attached to display some graphs in the Readme file.
+
+13.  * **Files with codes** * to create **interactive map and charts** are located in [MapVisualizations](https://github.com/LegallyNotBlonde/Fire-Analysis/tree/main/MapVisualizations) folder.
+14. * **[Google Slides (PowerPoint) presentation](https://docs.google.com/presentation/d/18218T6EQrjeQu0vUXJoN1WikxMXPLT6Y-v4c-PHHHL0/edit#slide=id.p)** * contains comprehensive project details, graphs, and **chart analysis in speaker notes**. The accompanying PDF presentation called "The_Growing_Threat_of_Wildfires.pdf" mirrors the presentation, excluding the speaker notes.
+
+* **[Resources folder](https://github.com/LegallyNotBlonde/Fire-Analysis/tree/main/Resources)** contains original, raw data sets.
+* **[Outputs](https://github.com/LegallyNotBlonde/Fire-Analysis/tree/main/Outputs)** includes transformed data and tables.
+* **[Charts](https://github.com/LegallyNotBlonde/Fire-Analysis/tree/main/Charts)** folder contains various visualization displays.
+
 
 ___
 
