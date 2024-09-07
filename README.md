@@ -88,7 +88,7 @@ ___
 6. ***USD_Impact_data_ETL2.ipynb*** calculates financial impact of fires
 7. ***calculating_key_metrics_for_visualization_pandas.ipynb*** calculates fire numbers, median durations, the number of deaths, and the total damages both by month and by year
 8. ***yearly_kpi_plots.ipynb*** - pandas code to create yearly plots to show fire trends during the analysed period
-9. ***CreateDataBase.ipynb*** reate and query SQLite database
+9. ***CreateDataBase.ipynb*** create and query SQLite database
 10. ***CombineDataset.ipynb*** merge and analyze county data
 11. ***FireStatsToMapPrep.ipynb*** convert statistical data for map usage
 12. png files are attached to display some graphs in the Readme file.
