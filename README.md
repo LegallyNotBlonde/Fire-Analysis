@@ -96,7 +96,7 @@ Here is the right order to read files:
 10. * **FireStatsToMapPrep.ipynb** * - Taking cleaned data and adjusting structure for best use with maps 
 11. * **CreateDataBase.ipynb** * - taking extracted, cleaned data and loading into SQL database
  
-12. png files are attached to display some graphs in the Readme file.
+*png files are attached to display some graphs in the Readme file.
 
 ___
 
